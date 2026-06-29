@@ -1,0 +1,63 @@
+/* ==========================================
+   Animations
+========================================== */
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+
+    }
+
+    to {
+
+        opacity: 1;
+
+    }
+
+}
+
+@keyframes slideUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(40px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+.fade-in {
+
+    animation: fadeIn .8s ease forwards;
+
+}
+
+.slide-up {
+
+    animation: slideUp .8s ease forwards;
+
+}
+
+.hover-lift {
+
+    transition: var(--transition-normal);
+
+}
+
+.hover-lift:hover {
+
+    transform: translateY(-6px);
+
+}

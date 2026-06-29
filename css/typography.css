@@ -1,0 +1,103 @@
+/* ==========================================
+   AG Portfolio
+   Version : v1.0.0
+   File    : typography.css
+   Purpose : Typography System
+========================================== */
+
+body {
+    font-family: var(--font-primary);
+    font-size: var(--fs-md);
+    font-weight: var(--fw-regular);
+    line-height: var(--lh-normal);
+
+    color: var(--color-primary);
+    background: var(--color-bg);
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ======================================
+   Headings
+====================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-primary);
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-tight);
+}
+
+h1 {
+    font-size: clamp(3rem, 6vw, 5rem);
+}
+
+h2 {
+    font-size: clamp(2.25rem, 4vw, 3.5rem);
+}
+
+h3 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+/* ======================================
+   Paragraphs
+====================================== */
+
+p {
+    color: var(--color-secondary);
+    margin-bottom: var(--space-4);
+}
+
+/* ======================================
+   Links
+====================================== */
+
+a {
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: var(--color-accent);
+}
+
+/* ======================================
+   Text Helpers
+====================================== */
+
+.text-center {
+    text-align: center;
+}
+
+.text-muted {
+    color: var(--color-muted);
+}
+
+.text-accent {
+    color: var(--color-accent);
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: var(--fw-bold);
+}
