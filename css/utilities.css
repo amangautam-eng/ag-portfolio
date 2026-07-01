@@ -1,0 +1,361 @@
+/* =====================================================
+   AG PORTFOLIO
+   File        : utilities.css
+   Version     : v1.0.0
+   Description : Utility Classes
+===================================================== */
+
+
+/* ==========================================
+   TEXT ALIGNMENT
+========================================== */
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+/* ==========================================
+   TEXT COLORS
+========================================== */
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.text-secondary {
+    color: var(--color-secondary);
+}
+
+.text-muted {
+    color: var(--color-text-muted);
+}
+
+.text-white {
+    color: var(--color-text);
+}
+
+
+/* ==========================================
+   FONT WEIGHT
+========================================== */
+
+.fw-light {
+    font-weight: var(--fw-light);
+}
+
+.fw-regular {
+    font-weight: var(--fw-regular);
+}
+
+.fw-medium {
+    font-weight: var(--fw-medium);
+}
+
+.fw-semibold {
+    font-weight: var(--fw-semibold);
+}
+
+.fw-bold {
+    font-weight: var(--fw-bold);
+}
+
+.fw-black {
+    font-weight: var(--fw-black);
+}
+
+
+/* ==========================================
+   BORDER RADIUS
+========================================== */
+
+.rounded-sm {
+    border-radius: var(--radius-sm);
+}
+
+.rounded-md {
+    border-radius: var(--radius-md);
+}
+
+.rounded-lg {
+    border-radius: var(--radius-lg);
+}
+
+.rounded-xl {
+    border-radius: var(--radius-xl);
+}
+
+.rounded-full {
+    border-radius: var(--radius-full);
+}
+
+
+/* ==========================================
+   SHADOWS
+========================================== */
+
+.shadow-sm {
+    box-shadow: var(--shadow-sm);
+}
+
+.shadow-md {
+    box-shadow: var(--shadow-md);
+}
+
+.shadow-lg {
+    box-shadow: var(--shadow-lg);
+}
+
+.shadow-glow {
+    box-shadow: var(--shadow-glow);
+}
+
+
+/* ==========================================
+   BACKGROUNDS
+========================================== */
+
+.bg-surface {
+    background: var(--color-surface);
+}
+
+.bg-surface-light {
+    background: var(--color-surface-light);
+}
+
+.bg-primary {
+    background: var(--color-primary);
+}
+
+.bg-secondary {
+    background: var(--color-secondary);
+}
+
+.bg-glass {
+    background: var(--glass-bg);
+}
+
+
+/* ==========================================
+   GLASS
+========================================== */
+
+.glass {
+
+    background: var(--glass-bg);
+
+    backdrop-filter: blur(18px);
+
+    -webkit-backdrop-filter: blur(18px);
+
+    border: 1px solid var(--glass-border);
+
+}
+
+
+/* ==========================================
+   VISIBILITY
+========================================== */
+
+.hidden {
+    display: none !important;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+
+/* ==========================================
+   CURSOR
+========================================== */
+
+.pointer {
+    cursor: pointer;
+}
+
+
+/* ==========================================
+   USER SELECT
+========================================== */
+
+.no-select {
+
+    user-select: none;
+
+}
+
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+.object-cover {
+
+    object-fit: cover;
+
+}
+
+.object-contain {
+
+    object-fit: contain;
+
+}
+
+
+/* ==========================================
+   TRANSITIONS
+========================================== */
+
+.transition {
+
+    transition: all var(--transition-normal);
+
+}
+
+
+/* ==========================================
+   HOVER EFFECTS
+========================================== */
+
+.hover-lift {
+
+    transition: transform var(--transition-normal);
+
+}
+
+.hover-lift:hover {
+
+    transform: translateY(-5px);
+
+}
+
+.hover-scale {
+
+    transition: transform var(--transition-normal);
+
+}
+
+.hover-scale:hover {
+
+    transform: scale(1.04);
+
+}
+
+
+/* ==========================================
+   OPACITY
+========================================== */
+
+.opacity-0 {
+
+    opacity: 0;
+
+}
+
+.opacity-50 {
+
+    opacity: .5;
+
+}
+
+.opacity-100 {
+
+    opacity: 1;
+
+}
+
+
+/* ==========================================
+   SCREEN READER
+========================================== */
+
+.sr-only {
+
+    position: absolute;
+
+    width: 1px;
+
+    height: 1px;
+
+    padding: 0;
+
+    margin: -1px;
+
+    overflow: hidden;
+
+    clip: rect(0,0,0,0);
+
+    white-space: nowrap;
+
+    border: 0;
+
+}
+
+/* ==========================================
+   BUTTON COMPONENT
+========================================== */
+
+.btn {
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: .9rem 1.8rem;
+
+    border-radius: var(--radius-md);
+
+    font-weight: var(--fw-semibold);
+
+    transition: all var(--transition-normal);
+
+}
+
+.btn-primary {
+
+    background: var(--color-primary);
+
+    color: #fff;
+
+}
+
+.btn-primary:hover {
+
+    background: var(--color-primary-dark);
+
+    transform: translateY(-3px);
+
+}
+
+.btn-secondary {
+
+    border: 1px solid var(--color-border);
+
+    background: var(--color-surface);
+
+    color: var(--color-text);
+
+}
+
+.btn-secondary:hover {
+
+    border-color: var(--color-primary);
+
+    color: var(--color-primary);
+
+    transform: translateY(-3px);
+
+}

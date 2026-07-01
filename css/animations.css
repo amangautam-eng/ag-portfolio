@@ -1,63 +1,73 @@
-/* ==========================================
-   Animations
-========================================== */
+/* =====================================================
+   AG PORTFOLIO
+   File        : animations.css
+   Version     : v1.0.0
+   Description : Global Animations
+===================================================== */
+
+/* ===========================
+   KEYFRAMES
+=========================== */
 
 @keyframes fadeIn {
-
     from {
-
         opacity: 0;
-
     }
-
     to {
-
         opacity: 1;
-
     }
-
 }
 
-@keyframes slideUp {
-
+@keyframes fadeUp {
     from {
-
         opacity: 0;
-
         transform: translateY(40px);
-
     }
-
     to {
-
         opacity: 1;
-
         transform: translateY(0);
+    }
+}
 
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
     }
 
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
-.fade-in {
+/* ===========================
+   ANIMATION CLASSES
+=========================== */
 
+.animate-fade-in {
     animation: fadeIn .8s ease forwards;
-
 }
 
-.slide-up {
-
-    animation: slideUp .8s ease forwards;
-
+.animate-fade-up {
+    animation: fadeUp .8s ease forwards;
 }
 
-.hover-lift {
-
-    transition: var(--transition-normal);
-
+.animate-scale {
+    animation: scaleIn .8s ease forwards;
 }
 
-.hover-lift:hover {
-
-    transform: translateY(-6px);
-
+.animate-float {
+    animation: float 4s ease-in-out infinite;
 }

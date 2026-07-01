@@ -1,28 +1,11 @@
-/**
- * ==========================================
- * AG Portfolio
- * Version : v1.0.0
- * File    : main.js
- * Purpose : Application Entry Point
- * ==========================================
- */
+/* =====================================================
+   AG PORTFOLIO
+   File        : main.js
+   Version     : v1.0.0
+===================================================== */
 
-'use strict';
+document.addEventListener("DOMContentLoaded", () => {
 
-import { initNavbar } from './navbar.js';
-import { initScroll } from './scroll.js';
-import { initAnimations } from './animations.js';
-import { initProjects } from './projects.js';
-import { initTheme } from './theme.js';
-
-document.addEventListener('DOMContentLoaded', () => {
-
-    console.log('AG Portfolio Initialized');
-
-    initTheme();
-    initNavbar();
-    initScroll();
-    initAnimations();
-    initProjects();
+    console.log("AG Portfolio initialized");
 
 });

@@ -1,47 +1,193 @@
+/* =====================================================
+   AG PORTFOLIO
+   File        : reset.css
+   Version     : v1.0.0
+   Description : Browser Reset & Global Defaults
+===================================================== */
+
 /* ==========================================
-   Modern CSS Reset
+   BOX MODEL
 ========================================== */
 
 *,
 *::before,
-*::after{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html{
-    scroll-behavior:smooth;
+/* ==========================================
+   ROOT
+========================================== */
+
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
 }
 
-body{
-    min-height:100vh;
+body {
+    min-height: 100vh;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
+
+/* ==========================================
+   MEDIA
+========================================== */
 
 img,
-picture{
-    display:block;
-    max-width:100%;
+picture,
+svg,
+video,
+canvas {
+    display: block;
+    max-width: 100%;
 }
 
-button,
+img {
+    height: auto;
+}
+
+/* ==========================================
+   FORMS
+========================================== */
+
 input,
+button,
 textarea,
-select{
-    font:inherit;
+select {
+    font: inherit;
+    color: inherit;
+    background: transparent;
 }
 
-button{
-    border:none;
-    background:none;
-    cursor:pointer;
+button {
+    border: none;
+    cursor: pointer;
 }
 
-ul{
-    list-style:none;
+textarea {
+    resize: vertical;
 }
 
-a{
-    text-decoration:none;
-    color:inherit;
+/* ==========================================
+   LINKS
+========================================== */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ==========================================
+   LISTS
+========================================== */
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* ==========================================
+   TABLES
+========================================== */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ==========================================
+   HEADINGS
+========================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+}
+
+/* ==========================================
+   PARAGRAPHS
+========================================== */
+
+p {
+    overflow-wrap: break-word;
+}
+
+/* ==========================================
+   HR
+========================================== */
+
+hr {
+    border: none;
+}
+
+/* ==========================================
+   FIELDSET
+========================================== */
+
+fieldset {
+    border: none;
+}
+
+/* ==========================================
+   DETAILS
+========================================== */
+
+summary {
+    cursor: pointer;
+}
+
+/* ==========================================
+   SELECTION
+========================================== */
+
+::selection {
+    background: var(--color-primary);
+    color: var(--color-text);
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-surface-light);
+    border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary);
+}
+
+/* ==========================================
+   FOCUS
+========================================== */
+
+:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 3px;
+}
+
+/* ==========================================
+   DISABLED
+========================================== */
+
+:disabled {
+    cursor: not-allowed;
+    opacity: .6;
 }
